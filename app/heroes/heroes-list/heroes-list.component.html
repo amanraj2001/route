@@ -1,0 +1,15 @@
+<div class="container">
+
+  <p>heroes-list works!</p>
+  <div *ngFor="let item of herodata">
+<button class="w-100 text-start bg-secondary mt-2">
+
+  <a class="text-decoration-none text-white fs-3" [routerLink]="['/herodetail',item.id]">
+
+    <span>{{item.id}} </span>{{item.name}}
+  </a>
+</button>
+
+  </div>
+    <button >log</button>
+</div>

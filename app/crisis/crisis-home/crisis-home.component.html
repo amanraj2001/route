@@ -1,0 +1,14 @@
+<div class="container">
+  <p>crisis-home works!</p>
+  <div class="w-100  " *ngFor="let item of data">
+
+      <button class="w-100 text-start  bg-secondary  mt-2">
+
+        <a class="text-decoration-none text-white     fs-3  " [routerLink]="['detail',item.id]"><span class="">{{item.id}} </span>{{item.desc}}</a>
+      </button>
+
+
+    </div>
+
+</div>
+<router-outlet></router-outlet>
